@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#"
+     xml:base="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-14="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Aplica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Aplica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar_Vacunacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Corresponde_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Corresponde_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Se_vacuna_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Se_vacuna_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante_de_Vacuna"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar_Vacunacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Tiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Tiene">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar_Vacunacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante_de_Vacuna"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#CI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#CI">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante_de_Vacuna"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Edad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante_de_Vacuna"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Fecha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Fecha">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar_Vacunacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante_de_Vacuna"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Nombre_Vacunador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Nombre_Vacunador">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Num_Vacunas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Num_Vacunas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vac_Disponibles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vac_Disponibles">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar_Vacunacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar_Vacunacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante_de_Vacuna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante_de_Vacuna"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis"/>
+        <Corresponde_a rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote1"/>
+        <Fecha>25/05/2021</Fecha>
+        <Nombre_Vacunador>Lic. Juan Perez</Nombre_Vacunador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis"/>
+        <Corresponde_a rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote2"/>
+        <Fecha>16/02/2022</Fecha>
+        <Nombre_Vacunador>Lic. Maria Lopez</Nombre_Vacunador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote"/>
+        <Corresponde_a rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna1"/>
+        <ID>2021060LD</ID>
+        <Num_Vacunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</Num_Vacunas>
+        <Vac_Disponibles rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</Vac_Disponibles>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote"/>
+        <Corresponde_a rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna2"/>
+        <ID>589651DS</ID>
+        <Num_Vacunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</Num_Vacunas>
+        <Vac_Disponibles rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</Vac_Disponibles>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar_Vacunacion"/>
+        <Aplica rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis1"/>
+        <Tiene rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote1"/>
+        <Nombre>UTA</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar_Vacunacion"/>
+        <Aplica rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis2"/>
+        <Tiene rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lote2"/>
+        <Nombre>Centro deportivo Iñaquito</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante_de_Vacuna"/>
+        <Se_vacuna_en rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar1"/>
+        <Tiene rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis1"/>
+        <CI rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1804837456</CI>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</Edad>
+        <Nombre>David Paredes</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Solicitante_de_Vacuna"/>
+        <Se_vacuna_en rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Lugar2"/>
+        <Tiene rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Dosis2"/>
+        <CI rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1801614569</CI>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</Edad>
+        <Nombre>Nelly Guerra</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna"/>
+        <Nombre>SINOVAC</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dapar/ontologies/2022/1/untitled-ontology-14#Vacuna"/>
+        <Nombre>PFIZER</Nombre>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
